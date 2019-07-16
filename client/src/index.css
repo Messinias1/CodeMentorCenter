@@ -84,12 +84,13 @@ img {
 }
 
 .text-primary {
-  color: var(--cmc-lightblue-color);
+  color: var(--cmc-darkblue-color);
 }
 
 .text-dark {
   color: var(--dark-color);
 }
+
 */
 
 /* Padding */
@@ -658,15 +659,18 @@ section.container {
   width: 100%;
   height: auto;
 }
+
 .horizontalSlider___281Ls {
   overflow: hidden !important;
   width: 100%;
   height: 455px;
 }
+
 .carousel_slider-tray-wrapper {
   width: 380px;
   height: 480px;
 }
+
 .slideInner___2mfX9 {
   position: relative !important;
   width: 100%;
@@ -676,6 +680,7 @@ section.container {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .buttonBack___1mlaL,
 .buttonNext___2mOCa {
   border: none;
@@ -685,10 +690,12 @@ section.container {
   border-radius: inherit;
   background-color: var(--white-color);
 }
+
 .buttonBack___1mlaL:focus,
 .buttonNext___2mOCa:focus {
   outline: none;
 }
+
 /* Profile Card (All) */
 /**********************/
 .p-card {
@@ -951,6 +958,220 @@ section.container {
   bottom: 0;
 }
 
+/* User Profile Dashboard */
+/***************************/
+/* Welcome Header Band */
+.dash-alerts-bands {
+  position: relative;
+  top: 108px;
+  background-color: var(--dark-color);
+  color: var(--cream-color);
+  padding: 1rem;
+}
+
+.dash-alerts-bands .fas {
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.dash-alerts-bands .dashNav {
+  position: relative;
+  top: -10px;
+  float: right;
+  display: flex;
+  padding: 3px;
+}
+
+.dashNav .edit,
+.dashNav .delete {
+  margin: 3px;
+  color: var(--cream-color);
+  background: none;
+  border: 1px solid var(--cream-color);
+  padding: 3px;
+}
+
+.dashNav .edit:hover {
+  color: var(--cream-color);
+  background: var(--cmc-darkblue-color);
+}
+
+.dashNav .delete:hover {
+  color: var(--cream-color);
+  background: var(--cmc-red-color);
+}
+
+.requestAlert {
+  margin-top: 15px;
+  background-color: var(--cmc-red-color);
+  padding: 5px 10px;
+}
+
+/* Mentor Available Status */
+.onlineStatus {
+  margin: 0 20px;
+}
+
+.onlineStatus span {
+  color: #28a745;
+}
+
+.onlineStatus .success {
+  padding-top: 4px;
+  color: #28a745;
+}
+
+.onlineStatus .fas {
+  position: relative;
+  top: 4px;
+  right: 1px;
+  padding: 5px 10px 0 0;
+  font-size: 1.5rem !important;
+}
+
+/* Profile Information */
+.dashProfileSummary {
+  position: relative;
+  top: 108px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashProfileSummary a:link,
+.dashProfileSummary a:visited {
+  color: var(--dark-color);
+}
+
+.dashProfileSummary a:link:hover,
+.dashProfileSummary a:visited:hover {
+  color: var(--cmc-darkblue-color);
+  text-decoration: underline;
+}
+
+.profileSummary,
+.displayAllMentorships,
+.mentorDashboard {
+  margin: 11px;
+  padding: 20px;
+  background-color: var(--cream-color);
+  border: 1px var(--dark-color) dotted;
+}
+
+.dashProfileSummary .basic,
+.dashProfileSummary .detail {
+  font-size: 1rem;
+  text-align: center;
+  width: 45%;
+}
+
+.dashProfileSummary .basic h2,
+.dashProfileSummary .detail h2,
+.mentorDashboard h2 {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.profileImg {
+  font-size: 7rem;
+  padding: 0px;
+  background: var(--cmc-lightblue-color);
+  width: 82%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.dashProfileSummary ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.dashProfileSummary li {
+  padding: 5px;
+}
+
+.menteeHelp,
+.mentoredHelp {
+  font-size: 0.8rem;
+}
+
+.menteeHelp {
+  padding-top: 15px;
+}
+
+.menteeHelp span,
+.mentoredHelp span {
+  font-weight: 700;
+}
+
+.mentorDashboard {
+  text-align: center;
+  width: 92%;
+}
+
+/* Requsted Mentionship Container */
+.requestedMentorship,
+.currentMentorship {
+  margin: 10px auto 0;
+  border: 1px var(var(--dark-color)) dotted;
+  background-color: var(--cmc-lightblue-color);
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid var(--cmc-gray-color);
+}
+
+.currentMentorship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.currentHead {
+  margin-top: 25px;
+}
+
+.currentMentorship ul {
+  border: 1px solid var(--dark-color);
+  background-color: var(--white-color);
+  padding: 10px;
+}
+
+.currentMentorship li button {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+.currentMentorship li:last-child {
+  text-align: center;
+}
+
+.requestedMentorship span,
+.currentMentorship span {
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+/* Add the following to edit profile
+
+.becomeMentor {
+  width: 90%;
+  padding: 15px;
+  text-align: center;
+}
+
+.becomeMentor h1 {
+  padding-bottom: 15px;
+}
+
+.becomeMentor p {
+  padding-bottom: 15px;
+}
+
+*/
+
 /* About Us Page */
 /*****************/
 .about {
@@ -1053,9 +1274,11 @@ section.container {
   .navbar {
     padding: 0.5rem 1rem;
   }
+
   .navbar ul {
     display: block;
   }
+
   .navbar ul li a {
     padding: 0;
   }
@@ -1366,4 +1589,8 @@ section.container {
   .about .person5 {
     margin: 15px;
   }
+}
+
+.aboutUsBanner {
+  text-align: center;
 }
